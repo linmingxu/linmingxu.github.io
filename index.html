@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./lib/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="log">
+
+        </div>
+    </div>
+
+    <div class="lbt">
+        <img src="./images/131.JPG" alt="">
+        <img src="./images/中国结45.JPG" alt="">
+        <img src="./images/76.JPG" alt="">
+        <img src="./images/2.JPG" alt="">
+        <img src="./images/7.JPG" alt="">
+        <img src="./images/82.JPG" alt="">
+        <div class="anniu"></div>
+    </div>
+
+</body>
+
+<script>
+    $(function () {
+
+
+        let num = 0;
+
+        $('.anniu').click(function () {
+            if (num == 4) {
+                num = 0;
+                $('.lbt img').eq(num).fadeIn().siblings('img').fadeOut();
+            } else {
+                $('.lbt img').eq(num).fadeIn().siblings('img').fadeOut();
+            }
+            num++;
+        })
+
+        $('.anniu').click();
+        setInterval(function () {
+            $('.anniu').click()
+        }, 1300);
+    });
+</script>
+
+</html>
