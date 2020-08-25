@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #fff;
 }
 .header {
   width: 100%;
@@ -49,27 +49,59 @@ body {
 .zhuti {
   display: flex;
   width: 100%;
-  height: 5rem;
+  height: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.zhuti .box {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  padding-left: 0.1rem;
-}
-.zhuti .box img {
+.zhuti span {
+  position: relative;
   float: left;
   display: block;
-  height: 2rem;
-  width: 2rem;
-  margin-top: 0.4rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-top: 0.1rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
 }
-.zhuti .box h3 {
+.zhuti span img {
+  width: 100%;
+}
+.zhuti span .si {
+  position: absolute;
+  top: -0.1rem;
+  left: 0.1rem;
+}
+.show {
+  background-color: #000;
+  width: 100%;
+  height: 5rem;
+}
+.show .box {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.show .box .left {
   float: left;
-  color: #000;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.show .box .left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+.show .box .right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 0.2rem 0 0 0.2rem;
+  background-color: #fff;
+}
+.show .box .right h3 {
   font-size: 0.4rem;
-  margin-top: 0.6rem;
-  margin-left: 0.2rem;
   font-weight: 400;
+  margin-bottom: 0.15rem;
 }

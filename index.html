@@ -18,7 +18,7 @@
     <div class="header">
         <div class="log">
         </div>
-        <h1>LMX</h1>
+        <h1>LoveMaXing <span>family</span></h1>
     </div>
 
     <div class="lbt">
@@ -31,31 +31,48 @@
         <div class="anniu"></div>
     </div>
     <div class="zhuti">
-        <div class="box">
-            <img src="./images/logo.jpg" alt="">
-            <h3>林铭旭</h3>
-            <h3>爸爸</h3>
-            <!-- <h3>你都给阿萨德挥洒流口水的老客户萨</h3> -->
+        <span><img src="./images/logo.jpg" alt=""></span>
+        <span><img src="./images/mamalogo.jpg" alt=""></span>
+        <span><img src="./images/仔仔.jpg" alt="" class="si"></span>
+        <span><img src="./images/meimei.jpg" alt="" class="si"></span>
+    </div>
+    <div class="show">
+        <div class="box" style="display: block;">
+            <div class="left">
+                <img src="./images/lmx.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3>姓名:林铭旭</h3>
+                <h3>家庭地位:爸爸</h3>
+            </div>
         </div>
         <div class="box">
-            <img src="./images/mamalogo.jpg" alt="">
-            <h3>马文兴</h3>
-            <h3>妈妈</h3>
-            <!-- <h3>你都给阿萨德挥洒流口水的老客户萨</h3> -->
+            <div class="left">
+                <img src="./images/mwx.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3>姓名:马文兴</h3>
+                <h3>家庭地位:妈妈</h3>
+            </div>
         </div>
         <div class="box">
-            <img src="./images/仔仔.jpg" alt="">
-            <h3>林宜城</h3>
-            <h3>儿子</h3>
-            <!-- <h3>你都给阿萨德挥洒流口水的老客户萨</h3> -->
+            <div class="left">
+                <img src="./images/lyc.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3>姓名:林宜城</h3>
+                <h3>家庭地位:臭儿子</h3>
+            </div>
         </div>
         <div class="box">
-            <img src="./images/meimei.jpg" alt="">
-            <h3>林怡嘉</h3>
-            <h3>女儿</h3>
-            <!-- <h3>你都给阿萨德挥洒流口水的老客户萨</h3> -->
+            <div class="left">
+                <img src="./images/lyj.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3>姓名:林宜嘉</h3>
+                <h3>家庭地位:猪妹</h3>
+            </div>
         </div>
-
     </div>
 </body>
 
@@ -77,6 +94,11 @@
         setInterval(function () {
             $('.anniu').click()
         }, 2000);
+
+
+        $('.zhuti span').click(function () {
+            $('.show .box').eq($(this).index()).show().siblings().hide();
+        })
     });
 </script>
 
