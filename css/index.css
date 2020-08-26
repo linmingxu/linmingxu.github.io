@@ -52,6 +52,7 @@ body {
   height: 2rem;
   flex-wrap: wrap;
   padding-left: 0.1rem;
+  justify-content: space-between;
 }
 .zhuti span {
   position: relative;
